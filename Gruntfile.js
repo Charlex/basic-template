@@ -20,14 +20,11 @@ module.exports = function(grunt) {
     },
     sass: { 
       dist: {
-        options: { 
-          style: 'expanded'
-        },
         files: [{ 
           expand: true,
-          cwd: 'assets/styles/',
+          cwd: 'www/assets/styles/*',
           src: ['*.scss'],
-          dest: '../client/styles/',
+          dest: 'www/client/styles/*',
           ext: '.css',
         }]
       }
